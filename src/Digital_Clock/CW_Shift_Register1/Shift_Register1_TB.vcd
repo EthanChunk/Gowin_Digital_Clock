@@ -1,0 +1,117 @@
+$date
+	Tue May 14 11:14:11 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module Shift_Register1_TB $end
+$var wire 4 ! out [3:0] $end
+$var parameter 32 " n $end
+$var reg 1 # clk $end
+$var reg 1 $ rst $end
+$var reg 1 % sin $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 1 $ rst $end
+$var wire 1 % sin $end
+$var wire 4 & out [3:0] $end
+$var wire 4 ' next [3:0] $end
+$var parameter 32 ( n $end
+$scope module cnt $end
+$var wire 1 # CLK $end
+$var wire 4 ) D [3:0] $end
+$var parameter 32 * k $end
+$var reg 4 + Q [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 *
+b100 (
+b100 "
+$end
+#0
+$dumpvars
+bx +
+b0 )
+b0 '
+bx &
+0%
+1$
+0#
+bx !
+$end
+#5000
+b0 !
+b0 &
+b0 +
+1#
+#10000
+0#
+0$
+#15000
+b1 '
+b1 )
+1%
+1#
+#20000
+0#
+#25000
+b11 '
+b11 )
+b1 !
+b1 &
+b1 +
+1#
+#30000
+0#
+#35000
+b11 !
+b11 &
+b11 +
+b110 '
+b110 )
+0%
+1#
+#40000
+0#
+#45000
+b110 !
+b110 &
+b110 +
+b1101 '
+b1101 )
+1%
+1#
+#50000
+0#
+#55000
+b1011 '
+b1011 )
+b1101 !
+b1101 &
+b1101 +
+1#
+#60000
+0#
+#65000
+b111 '
+b111 )
+b1011 !
+b1011 &
+b1011 +
+1#
+#70000
+0#
+#75000
+b1111 '
+b1111 )
+b111 !
+b111 &
+b111 +
+1#

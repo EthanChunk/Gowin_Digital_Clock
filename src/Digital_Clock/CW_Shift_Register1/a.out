@@ -1,0 +1,53 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002849b065890 .scope module, "Shift_Register1" "Shift_Register1" 2 21;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst";
+    .port_info 2 /INPUT 1 "sin";
+    .port_info 3 /OUTPUT 4 "out";
+P_000002849b01cdc0 .param/l "n" 0 2 22, +C4<00000000000000000000000000000100>;
+L_000002849b0a8018 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v000002849b065c50_0 .net/2u *"_ivl_0", 3 0, L_000002849b0a8018;  1 drivers
+v000002849b01b810_0 .net *"_ivl_3", 2 0, L_000002849b01bc70;  1 drivers
+v000002849b01b8b0_0 .net *"_ivl_4", 3 0, L_000002849b01bd10;  1 drivers
+o000002849b066f98 .functor BUFZ 1, C4<z>; HiZ drive
+v000002849b01b950_0 .net "clk", 0 0, o000002849b066f98;  0 drivers
+v000002849b01b9f0_0 .net "next", 3 0, L_000002849b01bdb0;  1 drivers
+v000002849b01ba90_0 .net "out", 3 0, v000002849b065bb0_0;  1 drivers
+o000002849b067148 .functor BUFZ 1, C4<z>; HiZ drive
+v000002849b01bb30_0 .net "rst", 0 0, o000002849b067148;  0 drivers
+o000002849b067178 .functor BUFZ 1, C4<z>; HiZ drive
+v000002849b01bbd0_0 .net "sin", 0 0, o000002849b067178;  0 drivers
+L_000002849b01bc70 .part v000002849b065bb0_0, 0, 3;
+L_000002849b01bd10 .concat [ 1 3 0 0], o000002849b067178, L_000002849b01bc70;
+L_000002849b01bdb0 .functor MUXZ 4, L_000002849b01bd10, L_000002849b0a8018, o000002849b067148, C4<>;
+S_000002849b065a20 .scope module, "cnt" "CW_dff" 2 28, 2 1 0, S_000002849b065890;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "CLK";
+    .port_info 1 /INPUT 4 "D";
+    .port_info 2 /OUTPUT 4 "Q";
+P_000002849b01bf40 .param/l "k" 0 2 2, +C4<00000000000000000000000000000100>;
+v000002849b032fe0_0 .net "CLK", 0 0, o000002849b066f98;  alias, 0 drivers
+v000002849b032c30_0 .net "D", 3 0, L_000002849b01bdb0;  alias, 1 drivers
+v000002849b065bb0_0 .var "Q", 3 0;
+E_000002849b01c580 .event posedge, v000002849b032fe0_0;
+    .scope S_000002849b065a20;
+T_0 ;
+    %wait E_000002849b01c580;
+    %load/vec4 v000002849b032c30_0;
+    %assign/vec4 v000002849b065bb0_0, 0;
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Shift_Register1.v";

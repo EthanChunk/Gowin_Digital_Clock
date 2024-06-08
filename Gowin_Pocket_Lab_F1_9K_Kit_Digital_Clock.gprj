@@ -1,0 +1,33 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1N-9C" pn="GW1N-UV9LQ144C6/I5">gw1n9c-019</Device>
+    <FileList>
+        <File path="src/Digital_Clock/Alarm/CW_Alarm.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/Alarm/CW_EqComp.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/Alarm/CW_Mux21_OneHot.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/Alarm/Counter2.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/Alarm/Flash2.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/Alarm/Timer2.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/Beep/Flash.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/Beep/lib/Timer1.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_Clk_Div.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_DFF.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_Div_Even.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_Div_Odd.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_GT_Comp.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_LT_Comp.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_Mux21.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_Mux31.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_Reset_Delay.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_Seven_Segment_Numeric_LED_4Bit_Disp.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_Shift_Register1/CW_Shift_Register1.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_UDL_Count.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/CW_rDFF.v" type="file.verilog" enable="1"/>
+        <File path="src/Digital_Clock/Dec24.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_top_entity.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_top_entity.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>
